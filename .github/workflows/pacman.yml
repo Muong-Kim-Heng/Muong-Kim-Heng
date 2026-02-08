@@ -1,11 +1,12 @@
 name: generate pacman game
 on:
   schedule:
-    - cron: "0 0 * * *"  # Runs every day at midnight
-  workflow_dispatch:
+    - cron: "*/15 * * * *"  # Runs every 15 minutes
+  workflow_dispatch:        # Allows you to run it manually whenever you want
   push:
     branches:
-      - main
+      - main                # Runs every time you push to the main branch
+
 jobs:
   generate:
     permissions:
@@ -23,4 +24,4 @@ jobs:
           target_branch: output
           build_dir: dist
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}   
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
