@@ -15,8 +15,7 @@
   <img width="12" />
   <img src="https://skillicons.dev/icons?i=c#" height="60" alt="c# logo"  />
   <img width="12" />
-  <img src="https://skillicons.dev/icons?i=asp.net" height="60" alt="asp.net logo"  />
-  <img width="12" />
+<img src="https://skillicons.dev/icons?i=asp.net" height="60" style="margin-right: 12px;" alt="asp.net" />
 
 ###
 
